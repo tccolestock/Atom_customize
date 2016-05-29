@@ -1,0 +1,14 @@
+'.tree-view':
+  'a': 'tree-view:add-file'
+
+'body':
+  'ctrl-tab': 'pane:show-next-item'
+  'ctrl-shift-tab': 'pane:show-previous-item'
+  'ctrl-k k': 'pane:split-down-and-copy-active-item'
+  'ctrl-k i': 'pane:split-up-and-copy-active-item'
+  'ctrl-k l': 'pane:split-right-and-copy-active-item'
+  'ctrl-k j': 'pane:split-left-and-copy-active-item'
+  'ctrl-alt-j': 'window:focus-pane-on-left'
+  'ctrl-alt-l': 'window:focus-pane-on-right'
+  'ctrl-alt-i': 'window:focus-pane-above'
+  'ctrl-alt-k': 'window:focus-pane-below'
