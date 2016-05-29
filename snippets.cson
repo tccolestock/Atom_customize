@@ -1,0 +1,94 @@
+'.source.python':
+  'ROS_Init':
+    'prefix': 'ros_init'
+    'body': 'rospy.init_node("${1:node_name}", anonymous=${2:True})$0'
+  'ROS_LogInfo':
+    'prefix': 'ros_loginfo'
+    'body': 'rospy.loginfo(${1:variable})$0'
+  'ROS Not Shutdown':
+    'prefix': 'ros_awake'
+    'body': 'while not rospy.is_shutdown():\n\t$0'
+  'ROS Init Publisher':
+    'prefix': 'ros_pubr'
+    'body': '${1:pub_handle} = rospy.Publisher("${2:topic_name}", ${3:Message_Type}, queue_size=${4:10})$0'
+  'ROS Publish':
+    'prefix': 'ros_pub'
+    'body': '${1:pub_handle}.publish(${2:variable})$0'
+  'ROS Rate':
+    'prefix': 'ros_rate'
+    'body': '${1:rate_handle} = rospy.Rate(${2:10}) #hz$0'
+  'ROS Sleep':
+    'prefix': 'ros_sleep'
+    'body': '${1:rate_handle}.sleep()$0'
+  'ROS Import':
+    'prefix': 'ros_import'
+    'body': 'import rospy\nfrom std_msgs.msg import String, Float\nfrom __future__ import division\n$0'
+  'ROS Get_Time':
+    'prefix': 'ros_time'
+    'body': 'rospy.get_time()$0'
+  'Hash Bang':
+    'prefix': 'hashbang'
+    'body': '#!/usr/bin/env python'
+  'ROS Init Subscriber':
+    'prefix': 'ros_subr'
+    'body': 'rospy.Subscriber("${1:topic_name}", ${2:Message_Type}, ${3:callback})$0'
+  'ROS Caller ID':
+    'prefix': 'ros_callerID'
+    'body': 'rospy.get_caller_id()$0'
+  'ROS Init Service':
+    'prefix': 'ros_service'
+    'body': '${1:srv_handle} = rospy.Service("${2:service_name}", ${3:Service_Type}, ${4:function_call})$0'
+  'ROS Service Proxy':
+    'prefix': 'ros_service_proxy'
+    'body': '${1:srvProxy_handle} = rospy.ServiceProxy("${2:service_name}", ${3:Service_Type})$0'
+  'ROS Service Waitfor':
+    'prefix': 'ros_service_wait'
+    'body': 'rospy.wait_for_service("${1:service_name}")$0'
+  'ROS Spin':
+    'prefix': 'ros_spin'
+    'body': 'rospy.spin()$0'
+
+
+'.source.cpp':
+  'ROS_Init':
+    'prefix': 'ros_init'
+    'body': 'ros::init(argc, argv, "${1:node_name}");$0'
+  'ROS_NodeHandle':
+    'prefix': 'ros_nodehandle'
+    'body': 'ros::NodeHandle ${1:node_handle};$0'
+  'ROS Init Publisher':
+    'prefix': 'ros_pubr'
+    'body': 'ros::Publisher ${1:pub_handle} = ${2:node_handle}.advertise<${3:std_msgs}::${4:Messagae_Type}>("${5:topic_name}", ${6:100});$0'
+  'ROS Rate':
+    'prefix': 'ros_rate'
+    'body': 'ros::Rate ${1:rate_handle}(${2:10}); //hz$0'
+  'ROS Not Shutdown':
+    'prefix': 'ros_awake'
+    'body': 'while (ros::ok())\n{\n\t${1:/* code */}\n}$0'
+  'ROS LogInfo':
+    'prefix': 'ros_loginfo'
+    'body': 'ROS_INFO("${1:%s}", ${2:msg.data.c_str()});$0'
+  'ROS Publish':
+    'prefix': 'ros_pub'
+    'body': '${1:pub_handle}.publish(${2:variable});$0'
+  'ROS Spin':
+    'prefix': 'ros_spin'
+    'body': 'ros::spinOnce();$0'
+  'ROS Sleep':
+    'prefix': 'ros_sleep'
+    'body': '${1:rate_handle}.sleep();$0'
+  'ROS Include':
+    'prefix': 'ros_include'
+    'body': '#include "ros/ros.h"\n#include "std_msgs/String.h"\n#include "std_msgs/Float.h"\n#include <sstream>\n$0'
+  'ROS Init Subscriber':
+    'prefix': 'ros_subr'
+    'body': 'ros::Subscriber ${1:sub_handle} = ${2:node_handle}.subscribe("${3:topic_name}", ${4:1000}, ${5:callback});$0'
+  'ROS Init Service':
+    'prefix': 'ros_service'
+    'body': 'ros::ServiceServer ${1:srv_handle} = ${2:node_handle}.advertiseService("${3:service_name}", ${4:function_call});$0'
+  'ROS Init Client':
+    'prefix': 'ros_client'
+    'body': 'ros::ServiceClient ${1:client_handle} = ${2:node_handle}.serviceClient<${3:service_package}::${4:service_header}>("${5:service_name}");$0'
+  'ROS Error':
+    'prefix': 'ros_error'
+    'body': 'ROS_ERROR("${1:error_message}");$0'
