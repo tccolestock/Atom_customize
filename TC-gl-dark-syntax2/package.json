@@ -1,0 +1,22 @@
+{
+  "name": "TC-gl-dark-syntax2",
+  "theme": "syntax",
+  "version": "2.2.0",
+  "description": "A light syntax theme based on google guideline color.",
+  "keywords": [
+    "dark",
+    "syntax",
+    "theme"
+  ],
+
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

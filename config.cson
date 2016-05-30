@@ -43,7 +43,7 @@
     ]
     themes: [
       "atom-dark-ui"
-      "gl-dark-syntax"
+      "TC-gl-dark-syntax2"
     ]
   editor:
     fontSize: 12
