@@ -1,3 +1,30 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# https://atom.io/docs/latest/using-atom-basic-customization#cson
+
+
+# '.text.tex.latex':
+#   'Foo':
+#     'prefix': 'foo'
+#     'body': '\\\\foo1'
 '.source.python':
   'ROS_Init':
     'prefix': 'ros_init'
@@ -22,7 +49,7 @@
     'body': '${1:rate_handle}.sleep()$0'
   'ROS Import':
     'prefix': 'ros_import'
-    'body': 'import rospy\nfrom std_msgs.msg import String, Float\nfrom __future__ import division\n$0'
+    'body': 'import rospy\nfrom std_msgs.msg import String, Float32, UInt8\nfrom __future__ import division\n$0'
   'ROS Get_Time':
     'prefix': 'ros_time'
     'body': 'rospy.get_time()$0'
@@ -47,6 +74,22 @@
   'ROS Spin':
     'prefix': 'ros_spin'
     'body': 'rospy.spin()$0'
+
+  'Myo Imports':
+    'prefix': 'myo_import'
+    'body': 'from sensor_msgs.msg import Imu\nfrom ros_myo.msg import MyoArm, EmgArray\nfrom geometry_msgs.msg import Quaternion, Vector3\n$0'
+
+  'SR Imports':
+    'prefix': 'sr_import'
+    'body': 'from sr_robot_commander.sr_arm_commander import SrArmCommander\nfrom sr_robot_commander.sr_hand_commander import SrHandCommander\n\nhand_commander = SrHandCommander()\narm_commander = SrArmCommander()\n$0'
+  'SR Hand Move':
+    'prefix': 'sr_hand_move'
+    'body': 'hand_commander.move_to_joint_value_target_unsafe(${1:joint_goals}, ${2:1.0}, ${3:True})$0'
+  'SR Arm Move':
+    'prefix': 'sr_arm_move'
+    'body': 'arm_commander.move_to_joint_value_target_unsafe(${1:joint_goals},${2:1.0},${3:True})$0'
+
+
 
 
 '.source.cpp':
@@ -79,7 +122,7 @@
     'body': '${1:rate_handle}.sleep();$0'
   'ROS Include':
     'prefix': 'ros_include'
-    'body': '#include "ros/ros.h"\n#include "std_msgs/String.h"\n#include "std_msgs/Float.h"\n#include <sstream>\n$0'
+    'body': '#include "ros/ros.h"\n#include "std_msgs/String.h"\n#include "std_msgs/Float32.h"\n#include <sstream>\n$0'
   'ROS Init Subscriber':
     'prefix': 'ros_subr'
     'body': 'ros::Subscriber ${1:sub_handle} = ${2:node_handle}.subscribe("${3:topic_name}", ${4:1000}, ${5:callback});$0'
@@ -92,3 +135,4 @@
   'ROS Error':
     'prefix': 'ros_error'
     'body': 'ROS_ERROR("${1:error_message}");$0'
+
