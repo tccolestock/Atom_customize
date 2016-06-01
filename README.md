@@ -1,5 +1,5 @@
 # Storage area for Atom Customizations
-This repository acts as a simple storage bin for all of my customizations to atom. This will allow (ideally) easy integration amongst different machines creating consistency. Used on a Linux system. 
+This repository acts as a simple storage bin for all of my customizations to atom. This will allow (ideally) easy integration amongst different machines creating consistency. Used on a Linux system.
 
 ## Linking Config Files
 
@@ -27,9 +27,9 @@ ln -s ~/syntax/directory/ ~/.atom/packages/
 
 To make the keymap: "ctrl-alt-l" work to change pane focus to the right, the native shortcut in Linux must be removed. Do so by:
 
-1) Going into System settings
-2) Clicking Keyboard
-3) Selecting the Shortcuts tab.
-4) Select "System" in the left pane.
-5) Select "Lock Screen" in the right pane.
-6) Press Backspace to delete shortcut, or reassign to another combination.
+1. Going into System settings
+2. Clicking Keyboard
+3. Selecting the Shortcuts tab.
+4. Select "System" in the left pane.
+5. Select "Lock Screen" in the right pane.
+6. Press Backspace to delete shortcut, or reassign to another combination.
