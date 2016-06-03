@@ -1,6 +1,10 @@
 # Storage area for Atom Customizations
 This repository acts as a simple storage bin for all of my customizations to atom. This will allow (ideally) easy integration amongst different machines creating consistency. Used on a Linux system.
 
+## Linking
+
+A bash script link.sh is provided to automatically create symbolic links for the provided configuration files and syntax theme. This script assumes that the OS is Linux (tested on Ubuntu 14.04) and that the Atom folder is located at ~/.atom/ .
+
 ## Linking Config Files
 
 Symbolic links can be used to connect Atom to the configuration files in the local repository.
