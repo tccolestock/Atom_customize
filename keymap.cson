@@ -1,5 +1,3 @@
-'.tree-view':
-  'a': 'tree-view:add-file'
 
 'body':
   'ctrl-tab': 'pane:show-next-item'
