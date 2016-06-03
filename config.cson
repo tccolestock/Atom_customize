@@ -145,6 +145,10 @@
   editor:
     preferredLineLength: 95
     softWrapHangingIndent: 2
+".diff.source":
+  editor:
+    preferredLineLength: 95
+    softWrapHangingIndent: 2
 ".latex.log.text":
   editor:
     preferredLineLength: 90
@@ -168,6 +172,14 @@
     preferredLineLength: 95
     softWrapHangingIndent: 2
 ".python.text.traceback":
+  editor:
+    preferredLineLength: 95
+    softWrapHangingIndent: 2
+".shell-session.text":
+  editor:
+    preferredLineLength: 95
+    softWrapHangingIndent: 2
+".shell.source":
   editor:
     preferredLineLength: 95
     softWrapHangingIndent: 2
