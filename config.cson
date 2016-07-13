@@ -106,7 +106,6 @@
   "terminal-plus":
     core:
       mapTerminalsTo: "Folder"
-      mapTerminalsToAutoOpen: true
     style:
       defaultPanelHeight: "175px"
     toggles:
