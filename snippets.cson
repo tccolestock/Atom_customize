@@ -89,6 +89,13 @@
     'prefix': 'sr_arm_move'
     'body': 'arm_commander.move_to_joint_value_target_unsafe(${1:joint_goals},${2:1.0},${3:True})$0'
 
+  'Library Message':
+    'prefix': 'msg'
+    'body': 'msg["${1:key}"] = obj.${2:path.}${1:attribute}$0'
+  'Library Header':
+    'prefix': 'head'
+    'body': 'h = header.Header().endcode(obj)$0'
+
 
 
 
@@ -135,4 +142,3 @@
   'ROS Error':
     'prefix': 'ros_error'
     'body': 'ROS_ERROR("${1:error_message}");$0'
-
