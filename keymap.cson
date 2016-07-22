@@ -12,9 +12,9 @@
   'ctrl-alt-k': 'window:focus-pane-below'
 
 
-
 'atom-text-editor':
   'ctrl-shift-A': 'git-plus:add'
   'ctrl-shift-X': 'git-plus:commit'
   'ctrl-shift->': 'git-plus:push'
   'ctrl-shift-<': 'git-plus:pull'
+  'shift-delete': 'editor:delete-line'
