@@ -94,6 +94,7 @@
       "minimap-hide": true
       "minimap-hideDecorationsZIndex": 0
     textOpacity: 0.4
+  "seti-icons": {}
   "spell-check":
     grammars: [
       "source.asciidoc"
@@ -106,7 +107,6 @@
   "terminal-plus":
     core:
       mapTerminalsTo: "Folder"
-      mapTerminalsToAutoOpen: true
     style:
       defaultPanelHeight: "175px"
     toggles:
