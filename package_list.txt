@@ -30,6 +30,7 @@ minimap-bookmarks
 minimap-codeglance
 minimap-hide
 pdf-view
+seti-icons
 TC-gl-dark-syntax
 terminal-plus
 tool-bar
