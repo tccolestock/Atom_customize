@@ -1,7 +1,7 @@
 
 'body':
-  'ctrl-tab': 'pane:show-next-item'
-  'ctrl-shift-tab': 'pane:show-previous-item'
+  # 'ctrl-tab': 'pane:show-next-item'
+  # 'ctrl-shift-tab': 'pane:show-previous-item'
   'ctrl-k k': 'pane:split-down-and-copy-active-item'
   'ctrl-k i': 'pane:split-up-and-copy-active-item'
   'ctrl-k l': 'pane:split-right-and-copy-active-item'
@@ -11,6 +11,11 @@
   'ctrl-alt-i': 'window:focus-pane-above'
   'ctrl-alt-k': 'window:focus-pane-below'
 
+  'f4': 'application:new-file'
+  'f6': 'core:close'
+  # 'f2': 'core:undo'
+
+
 
 'atom-text-editor':
   'ctrl-shift-A': 'git-plus:add'
@@ -18,3 +23,23 @@
   'ctrl-shift->': 'git-plus:push'
   'ctrl-shift-<': 'git-plus:pull'
   'shift-delete': 'editor:delete-line'
+
+
+
+'.platform-linux, .platform-linux .command-palette atom-text-editor':
+  'f1': 'command-palette:toggle'
+
+
+'.platform-linux atom-text-editor':
+  'ctrl-shift-f2': ''
+  'alt-shift-f2': 'bookmarks:clear-bookmarks'
+  'ctrl-shift-f10': 'bookmarks:toggle-bookmark'
+  'alt-shift-f10': 'bookmarks:clear-bookmarks'
+
+
+'atom-text-editor':
+  'ctrl-f10': 'bookmarks:view-all'
+  # 'f2': 'unset!' 
+  'f10': 'bookmarks:jump-to-next-bookmark'
+  'shift-f10': 'bookmarks:jump-to-previous-bookmark'
+  'f2': 'core:undo'
