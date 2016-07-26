@@ -12,7 +12,10 @@
   'ctrl-alt-k': 'window:focus-pane-below'
 
   'f4': 'application:new-file'
+  'ctrl-shift-f4': 'application:add-project-folder'
   'f6': 'core:close'
+  'shift-f6': 'pane:close'
+  'ctrl-shift-f6': 'window:close'
   # 'f2': 'core:undo'
 
 
@@ -31,15 +34,13 @@
 
 
 '.platform-linux atom-text-editor':
-  'ctrl-shift-f2': ''
-  'alt-shift-f2': 'bookmarks:clear-bookmarks'
   'ctrl-shift-f10': 'bookmarks:toggle-bookmark'
   'alt-shift-f10': 'bookmarks:clear-bookmarks'
 
 
 'atom-text-editor':
-  'ctrl-f10': 'bookmarks:view-all'
-  # 'f2': 'unset!' 
   'f10': 'bookmarks:jump-to-next-bookmark'
+  'ctrl-f10': 'bookmarks:view-all'
   'shift-f10': 'bookmarks:jump-to-previous-bookmark'
+  # 'f2': 'unset!'
   'f2': 'core:undo'
