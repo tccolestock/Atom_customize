@@ -17,6 +17,7 @@
   'shift-f6': 'pane:close'
   'ctrl-shift-f6': 'window:close'
   # 'f2': 'core:undo'
+  'shift-delete': 'editor:delete-line'
 
 
 
