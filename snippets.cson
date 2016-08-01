@@ -49,7 +49,7 @@
     'body': '${1:rate_handle}.sleep()$0'
   'ROS Import':
     'prefix': 'ros_import'
-    'body': 'import rospy\nfrom std_msgs.msg import String, Float32, UInt8\nfrom __future__ import division\n$0'
+    'body': 'from __future__ import division\nimport rospy\nfrom std_msgs.msg import String, Float32, UInt8\n$0'
   'ROS Get_Time':
     'prefix': 'ros_time'
     'body': 'rospy.get_time()$0'
