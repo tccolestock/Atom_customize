@@ -19,7 +19,6 @@
     audioBeep: false
     autoHideMenuBar: true
     automaticallyUpdate: false
-    destroyEmptyPanes: false
     disabledPackages: [
       "markdown-preview"
       "minimap-autohide"
