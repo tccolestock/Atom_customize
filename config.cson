@@ -30,6 +30,8 @@
       "linter-matlab"
       "linter-pep8"
       "linter"
+      "latex-completions"
+      "autohide-tree-view"
     ]
     ignoredNames: [
       ".g"
@@ -41,7 +43,7 @@
       "*.gz"
     ]
     themes: [
-      "atom-dark-ui"
+      "seti-ui"
       "TC-gl-dark-syntax2"
     ]
   editor:
@@ -96,6 +98,11 @@
   "minimap-codeglance":
     numberOfLines: 12
   "seti-icons": {}
+  "seti-ui":
+    compactView: true
+    disableAnimations: true
+    fileIcons: false
+    themeColor: "Steel"
   "spell-check":
     grammars: [
       "source.asciidoc"
