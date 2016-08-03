@@ -11,22 +11,40 @@ minimap-codeglance {
   box-shadow: 0 0 10px 5px rgba(38,202,211,0.7); //rgba(0,0,0,0.5);
 }
 
-// atom-panel-container.modal {
-//
-// atom-panel.modal{
-//
-//     .tree-view-dialog {
-//       label.icon-file-add {
-//         font-size: 10px;
-//       }
-//     }
-//   }
-// }
-//
-// .preview-pane {
-//   .panel-heading {
-//     .preview-count {
-//       font-size: 20px;
-//     }
-//   }
-// }
+atom-workspace.seti-compact{
+
+   atom-workspace-axis.vertical{
+    .tab-bar{
+      height: 35px;
+      display: inline-table;
+      margin-bottom: 1px;
+      margin-top: 3px;
+      .tab {
+        height: 35px;
+        padding: 3px 10px 7px 10px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  atom-panel-container {
+    .project-root{
+      font-size: 11px;
+      padding-top: 33px;
+      .header{
+        height: 30px;
+        padding: 2px 0px 0px 5px;
+      }
+    }
+  }
+}
+
+
+.list-tree {
+  // line-height: 15px;
+  li.list-nested-item {
+    .list-item {
+      line-height: 15px;
+    }
+  }
+}
