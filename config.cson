@@ -18,7 +18,6 @@
   core:
     audioBeep: false
     autoHideMenuBar: true
-    automaticallyUpdate: false
     disabledPackages: [
       "markdown-preview"
       "minimap-autohide"
