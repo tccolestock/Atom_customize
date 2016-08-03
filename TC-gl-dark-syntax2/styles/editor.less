@@ -3,7 +3,7 @@
 
 atom-text-editor,
 :host {
-    background-color: rgba(15, 15, 15, 1);//@syntax-background-color;
+    background-color: rgba(20, 20, 20, 1);//@syntax-background-color;
     color           : @syntax-text-color;
 
 
@@ -18,7 +18,7 @@ atom-text-editor,
 
 
     .cursor {
-        border-left: 2px solid @syntax-cursor-color;
+        border-left: 2px solid rgba(38, 202, 211, 0.75);//@syntax-cursor-color;
     }
 
 
@@ -28,18 +28,18 @@ atom-text-editor,
 
 
     .bracket-matcher .region {
-        border-bottom: 2px solid @syntax-cursor-color;
+        border-bottom: 2px solid rgba(38, 202, 211, 0.7);//@syntax-cursor-color;
         box-sizing   : border-box;
     }
 
 
     .invisible-character {
-        color: @syntax-invisible-character-color;
+        color: rgba(38, 202, 211, 0.2);//@syntax-invisible-character-color;
     }
 
 
     .indent-guide {
-        color: @syntax-indent-guide-color;
+        color: rgba(38, 202, 211, 0.2);//@syntax-indent-guide-color;
     }
 
 
@@ -54,16 +54,14 @@ atom-text-editor,
             color                 : @syntax-gutter-text-color;
             -webkit-font-smoothing: antialiased;
 
-
             &.cursor-line {
-                color           : @syntax-gutter-text-color-selected;
+                color           : rgba(38, 202, 211, 0.9);//@syntax-gutter-text-color-selected;
                 background-color: @syntax-gutter-background-color-selected;
             }
 
             &.cursor-line-no-selection {
                 background-color: transparent;
             }
-
 
             .icon-right {
                 color: @syntax-text-color;
@@ -90,6 +88,6 @@ atom-text-editor,
     .gutter .line-number.folded,
     .gutter .line-number:after,
     .fold-marker:after {
-        color: @syntax-gutter-text-color-selected;
+        color: rgba(38, 202, 211, 0.5);//@syntax-gutter-text-color-selected;
     }
 }
