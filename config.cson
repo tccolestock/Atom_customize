@@ -93,6 +93,8 @@
       "minimap-hide": true
       "minimap-hideDecorationsZIndex": 0
     textOpacity: 0.4
+  "minimap-codeglance":
+    numberOfLines: 12
   "seti-icons": {}
   "spell-check":
     grammars: [
