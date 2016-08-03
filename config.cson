@@ -42,7 +42,7 @@
       "*.gz"
     ]
     themes: [
-      "atom-dark-ui"
+      "seti-ui"
       "TC-gl-dark-syntax2"
     ]
   editor:
