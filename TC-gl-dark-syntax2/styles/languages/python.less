@@ -1,41 +1,45 @@
 .source.python {
-  color: rgba(220, 220, 220, 1);//@mono-2;
+  color: lighten(rgba(220, 220, 220, 1), 5%);//@mono-2;
     .keyword.operator.logical.python {
-        color: @pink_200;
+        color: @hue-3;//@pink_200;
     }
     .keyword.operator.arithmetic.python{
         color: @mono-1;
         font-weight: lighter;
     }
     .keyword.other.python{
-        color: @pink_200;
+        color: @hue-3;//@pink_200;
     }
-    .variable.parameter {
-        color: @hue-6;
+    .variable.parameter.function.python {
+        color: darken(desaturate(@hue-6-2, 15%), 6%); //@hue-6;
     }
     .support.type.exception.python{
         color: @red_500;
     }
     .meta.function-call.arguments.python{
         color: lighten(@teal_500, 5%);
+        font-style: normal;
     }
     .meta.function-call.python{
-      color: rgba(175, 200, 210, .95);
+      color: darken(rgba(170, 200, 210, .95), 5%);
       font-style: italic;;
     }
     .support.function.builtin.python{
-      color: darken(@cyan_700, 2%);
+      color: darken(@cyan_700, 8%);
       font-style: italic;
     }
     .constant.numeric{
       .float.python{
         color: darken(desaturate(@hue-6-2, 15%), 3%);
       }
-      .integer.python{
+      .integer.decimal.python{
         color: darken(desaturate(@hue-6-2, 15%), 3%);
       }
     }
     .meta.structure.list.python {
       font-style: normal;
+    }
+    .entity.name.type.class.python {
+      color: @pink_200;
     }
 }
