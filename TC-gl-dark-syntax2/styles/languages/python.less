@@ -1,5 +1,5 @@
 .source.python {
-  color: rgba(200, 224, 224, 1);//@mono-2;
+  color: rgba(220, 220, 220, 1);//@mono-2;
     .keyword.operator.logical.python {
         color: @pink_200;
     }
@@ -17,18 +17,22 @@
         color: @red_500;
     }
     .meta.function-call.arguments.python{
-        color: @hue-1;
-        // font-weight: bold;
+        color: lighten(@teal_500, 5%);
     }
     .meta.function-call.python{
-      color: @yellow_200;
-      font-weight: lighter;
+      color: rgba(175, 200, 210, .95);
+      font-style: italic;;
     }
     .support.function.builtin.python{
-      color: @brown_400;
-      // font-weight: bold;
-      font-size: 105%;
+      color: darken(@cyan_700, 2%);
       font-style: italic;
     }
-
+    .constant.numeric{
+      .float.python{
+        color: darken(desaturate(@hue-6-2, 15%), 3%);
+      }
+      .integer.python{
+        color: darken(desaturate(@hue-6-2, 15%), 3%);
+      }
+    }
 }
