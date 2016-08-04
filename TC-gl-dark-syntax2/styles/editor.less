@@ -1,6 +1,10 @@
 // Editor styles (background, gutter, guides)
 // <- remove when Shadow DOM can't be disabled
 
+@keyframes blinker {
+  50% { opacity: 0.3;}
+}
+
 atom-text-editor,
 :host {
     background-color: rgba(20, 20, 20, 1);//@syntax-background-color;
@@ -27,9 +31,21 @@ atom-text-editor,
     }
 
 
-    .bracket-matcher .region {
-        border-bottom: 2px solid rgba(38, 202, 211, 0.7);//@syntax-cursor-color;
-        box-sizing   : border-box;
+    .bracket-matcher {
+      border-bottom: 1px solid rgba(38, 202, 211, 0.7);
+      position: absolute;
+      border: 1px solid rgba(38, 202, 211, 0.7);
+      background-color: rgba(38, 202, 211, 0.7);
+      .region {
+          border-bottom: 1px solid rgba(38, 202, 211, 0.7);//@syntax-cursor-color;
+          // box-sizing   : border-box;
+          // width: 8px;
+          // animation: blinker .5s step-start infinite;
+          // animation: blinker .5s ease-in;// infinite;
+          // animation-timing-function: step-start;
+
+      }
+
     }
 
 
