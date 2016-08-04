@@ -59,6 +59,8 @@
     tabType: "soft"
   "exception-reporting":
     userId: "58448a2b-38c2-955f-386f-c2cafe52e8d2"
+  "file-types":
+    m: "source.matlab"
   "git-plus": {}
   "julia-client":
     enableMenu: true
@@ -168,6 +170,14 @@
     preferredLineLength: 95
     softWrap: true
     softWrapAtPreferredLineLength: true
+    softWrapHangingIndent: 2
+".matlab.source":
+  editor:
+    preferredLineLength: 95
+    softWrapHangingIndent: 2
+".octave.source":
+  editor:
+    preferredLineLength: 95
     softWrapHangingIndent: 2
 ".python.regexp.source":
   editor:
