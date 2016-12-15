@@ -1,6 +1,9 @@
 "*":
   Hydrogen:
     kernelspec: "{\"kernelspecs\":{\"julia-0.4\":{\"resource_dir\":\"/home/chad/.local/share/jupyter/kernels/julia-0.4\",\"spec\":{\"language\":\"julia\",\"display_name\":\"Julia 0.4.6-pre\",\"env\":{},\"argv\":[\"/opt/julia/usr/bin/julia\",\"-i\",\"-F\",\"/home/chad/.julia/v0.4/IJulia/src/kernel.jl\",\"{connection_file}\"]}},\"python3\":{\"spec\":{\"display_name\":\"Python 3\",\"language\":\"python\",\"argv\":[\"/opt/anaconda3/bin/python\",\"-m\",\"ipykernel\",\"-f\",\"{connection_file}\"],\"env\":{}},\"resource_dir\":\"/opt/anaconda3/lib/python3.5/site-packages/ipykernel/resources\"},\"python2\":{\"resource_dir\":\"/home/chad/.conda/envs/py2/lib/python2.7/site-packages/ipykernel/resources\",\"spec\":{\"language\":\"python\",\"display_name\":\"Python 2\",\"env\":{},\"argv\":[\"/home/chad/.conda/envs/py2/bin/python\",\"-m\",\"ipykernel\",\"-f\",\"{connection_file}\"]}}}}"
+  "atom-beautify":
+    general:
+      _analyticsUserId: "bf30744d-208e-4702-899e-a5c0e41fcd7e"
   "atom-html-preview":
     triggerOnSave: true
   "autocomplete-plus":
@@ -27,8 +30,6 @@
       "language-matlab-only"
       "linter-chktex"
       "linter-matlab"
-      "linter-pep8"
-      "linter"
       "latex-completions"
       "autohide-tree-view"
     ]
@@ -42,6 +43,9 @@
       "*.gz"
     ]
     telemetryConsent: "no"
+    packagesWithKeymapsDisabled: [
+      "tool-bar"
+    ]
     themes: [
       "seti-ui"
       "TC-gl-dark-syntax2"
@@ -99,6 +103,8 @@
     textOpacity: 0.4
   "minimap-codeglance":
     numberOfLines: 12
+  "platformio-ide":
+    showHomeScreen: false
   "seti-icons": {}
   "seti-ui":
     compactView: true
