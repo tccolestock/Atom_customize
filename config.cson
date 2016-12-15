@@ -41,6 +41,7 @@
       "Thumbs.db"
       "*.gz"
     ]
+    telemetryConsent: "no"
     themes: [
       "seti-ui"
       "TC-gl-dark-syntax2"
@@ -121,6 +122,7 @@
     toggles:
       autoClose: true
   "tool-bar":
+    iconSize: "16px"
     position: "Bottom"
     visible: true
   "tree-view":
@@ -146,6 +148,10 @@
   editor:
     preferredLineLength: 95
     softWrapHangingIndent: 2
+".console.julia.text":
+  editor:
+    preferredLineLength: 95
+    softWrapHangingIndent: 2
 ".console.python.text":
   editor:
     preferredLineLength: 95
@@ -155,6 +161,10 @@
     preferredLineLength: 95
     softWrapHangingIndent: 2
 ".diff.source":
+  editor:
+    preferredLineLength: 95
+    softWrapHangingIndent: 2
+".julia.source":
   editor:
     preferredLineLength: 95
     softWrapHangingIndent: 2
