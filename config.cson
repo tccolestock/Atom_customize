@@ -85,6 +85,10 @@
     showId: true
   "linter-matlab":
     mlintDir: "/opt/MATLAB/R2015b/bin/glnxa64/"
+  "linter-pep8":
+    ignoreErrorCodes: [
+      "E402"
+    ]
   "linter-python-pep8":
     ignoreErrorCodes: "E501, W292"
     pep8DirToExecutable: "/usr/local/bin/"
