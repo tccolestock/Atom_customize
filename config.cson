@@ -42,10 +42,10 @@
       "Thumbs.db"
       "*.gz"
     ]
-    telemetryConsent: "no"
     packagesWithKeymapsDisabled: [
       "tool-bar"
     ]
+    telemetryConsent: "no"
     themes: [
       "seti-ui"
       "TC-gl-dark-syntax2"
