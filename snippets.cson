@@ -43,7 +43,7 @@
     'body': '${1:pub_handle}.publish(${2:variable})$0'
   'ROS Rate':
     'prefix': 'ros_rate'
-    'body': '${1:rate_handle} = rospy.Rate(${2:10}) #hz$0'
+    'body': '${1:rate_handle} = rospy.Rate(${2:10})$0'
   'ROS Sleep':
     'prefix': 'ros_sleep'
     'body': '${1:rate_handle}.sleep()$0'
